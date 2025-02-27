@@ -1,3 +1,5 @@
 pygame
 stable_baselines3
 numpy
+mlflow
+tensorboard
