@@ -43,3 +43,23 @@ flowchart TD
     H --> I[End]
 
 ```
+
+## Enviroment setup
+
+Used OpenAI Gym API enviroment to run custom bowling game where:
+- `Actions`: The agent controls the ball's velocity in the x and y-directions (continuous action space).
+- `Observations`: The state includes the ball's position and the positions of all pins (22-dimensional vector).
+- `Reward`: The agent earns rewards proportional to the number of pins knocked down.
+
+This environment provides feedback to the agent by returning a new state, reward, and termination flags after each action.
+
+## Training with PPO
+
+`PPO` is a policy gradient method that trains a stochastic policy to maximize cumulative rewards. It alternates between:
+1. Sampling actions from the policy to interact with the environment.
+2. Updating the policy using a "clipped surrogate objective" to ensure stable learning while avoiding overly large updates.
+
+## Testing the trained model
+1. The trained policy predicts actions based on the current state (obs).
+2. The environment executes these actions and returns feedback (new state, reward, etc.).
+3. Rendering visually shows how well the agent performs in knocking down pins.
