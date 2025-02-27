@@ -35,10 +35,11 @@ flowchart TD
 flowchart TD
     A[Start] --> B[Initialize PPO with MlpPolicy]
     B --> C[Define Policy Architecture using policy_kwargs]
-    C --> D[Create Environment (e.g., Bowling)]
-    D --> E[Train the Agent using model.learn()]
+    C --> D[Create Environment, e.g., Bowling]
+    D --> E[Train the Agent using model.learn]
     E --> F[Save the Trained Model]
     F --> G[Load the Model for Evaluation or Deployment]
     G --> H[Predict Actions and Interact with Environment]
     H --> I[End]
+
 ```
