@@ -10,6 +10,7 @@ Actor-critic architecture:
 2. Value Network (Critic): Estimates the value function to provide feedback on how good the state is under the current policy.
 
 ## MlpPolicy architecture:
+```
 flowchart TD
     subgraph Shared_Layers["Shared Layers"]
         direction TB
@@ -27,8 +28,10 @@ flowchart TD
     Input --> Dense1 --> Dense2
     Dense2 --> PolicyHead
     Dense2 --> ValueHead
+```
 
 ### RL flowchart:
+```
 flowchart TD
     A[Start] --> B[Initialize PPO with MlpPolicy]
     B --> C[Define Policy Architecture using policy_kwargs]
@@ -38,3 +41,4 @@ flowchart TD
     F --> G[Load the Model for Evaluation or Deployment]
     G --> H[Predict Actions and Interact with Environment]
     H --> I[End]
+```
