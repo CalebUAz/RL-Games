@@ -10,7 +10,7 @@ Actor-critic architecture:
 2. Value Network (Critic): Estimates the value function to provide feedback on how good the state is under the current policy.
 
 ## MlpPolicy architecture:
-```
+```mermaid
 flowchart TD
     subgraph Shared_Layers["Shared Layers"]
         direction TB
@@ -31,7 +31,7 @@ flowchart TD
 ```
 
 ### RL flowchart:
-```
+```mermaid
 flowchart TD
     A[Start] --> B[Initialize PPO with MlpPolicy]
     B --> C[Define Policy Architecture using policy_kwargs]
