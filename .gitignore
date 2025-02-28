@@ -170,3 +170,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 mlruns/*
+ppo_bowling_tensorboard/*
+
+bowling_ppo.zip
+.DS_Store

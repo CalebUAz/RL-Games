@@ -3,3 +3,4 @@ stable_baselines3
 numpy
 mlflow
 tensorboard
+stable-baselines3\[extra\]
